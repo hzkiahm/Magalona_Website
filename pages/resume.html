@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/resume-print.css" media="print">
+    <title>Resume - Hezekiah Magalona</title>
+
+<style>
+* {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, #325f8c, #022241);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+.card {
+    background: #fff;
+    width: 100%;
+    max-width: 900px;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Header */
+.header {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+.header img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.header-info {
+    flex: 1;
+}
+
+.header-info h1 {
+    font-size: 28px;
+    color: #022241;
+    margin-bottom: 5px;
+}
+
+.header-info p {
+    margin: 3px 0;
+    color: #333;
+    font-size: 14px;
+}
+
+/* Buttons */
+.btn-back, .btn-print {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 16px;
+    background: #022241;
+    height: 38px;  
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 12px;
+    align-content: center;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-back:hover, .btn-print:hover {
+    background: #022241;
+}
+
+.btn-print {
+    margin-left: 10px;
+}
+
+/* Sections */
+.section {
+    margin-top: 30px;
+}
+
+.section h2 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #32418C;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+    color: #003A70;
+}
+
+/* Skills */
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skills-grid div {
+    background: #f4f4f4;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* Entries */
+.edu-entry, .exp-entry {
+    margin-bottom: 15px;
+}
+
+.edu-entry span, .exp-entry span, .research-entry span {
+    display: block;
+    font-size: 13px;
+    color: #555;
+}
+
+.exp-entry ul {
+    margin-top: 5px;
+    padding-left: 18px;
+    font-size: 14px;
+}
+
+.exp-entry ul li {
+    margin-bottom: 5px;
+}
+
+.research-title {
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+/* Certificates */
+.certificates-entry {
+    padding-left: 30px;
+    font-size: 14px;
+}
+
+/* Responsive */
+@media(max-width: 600px){
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+    .header-info {
+        align-items: center;
+    }
+    .header img {
+        margin-bottom: 10px;
+    }
+}
+</style>
+</head>
+
+<body>
+<div class="card">
+    <div class="header">
+        <img src="../assets/picture.jpg" alt="Profile photo" style="border-radius: 2%"> 
+        <div class="header-info">
+            <h1>Hezekiah Magalona</h1>
+            <p>📞 09931146831</p>
+            <p>📧 hezekiahmagalona05@gmail.com</p>
+            <p>📍 Blk 3 Lot 37 Sweden St. Phase 11 Lantic Carmona Cavite</p>
+            <a href="../index.html" class="btn-back">Back to Home</a>
+            <button class="btn-print" onclick="window.print()">Print</button>
+        </div>
+    </div>
+
+    <section class="section">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div>Programming</div>
+            <div>Databases</div>
+            <div>UI Design</div>
+            <div>Web Development</div>
+            <div>Mobile Application</div>
+            <div>Digital Media</div>
+        </div>
+    </section>
+
+    <section class="section education">
+        <h2>Education</h2>
+        <div class="edu-entry">
+            <strong>2024 - Present</strong>
+            <span>National University - Manila</span>
+            <span>Bachelor of Science in Information Technology with a Specialization in Multimedia Arts and Animation</span>
+        </div>
+        <div class="edu-entry">
+            <strong>2022 - 2024</strong>
+            <span>Angelo L. Loyola Senior High School</span>
+            <span>Senior High School (Humanities and Social Sciences)</span>
+        </div>
+        <div class="edu-entry">
+            <strong>2018 - 2022</strong>
+            <span>Eusebio High School</span>
+            <span>Junior High School</span>
+        </div>
+        <div class="edu-entry">
+            <strong>2012 - 2018</strong>
+            <span>Rosario Elementary School</span>
+            <span>Grade School</span>
+        </div>
+    </section>
+
+    <section class="section experience">
+        <h2>Experiences</h2>
+        <div class="exp-entry">
+            <strong>Ang Sentinel - ALLSHS Official School Publication</strong>
+            <ul>
+                <li>Master Layout Artist</li>
+                <li>Duties: Designed layouts, online pubmats, school newspaper, and competed in journalism contest</li>
+                <li>2022-2024</li>
+            </ul>
+        </div>
+        <div class="exp-entry">
+            <strong>Supreme Secondary Learner Government (SSLG)</strong>
+            <ul>
+                <li>Finance Committee</li>
+                <li>Duties: Managed finances, tracked budgets, and assisted in financial planning</li>
+                <li>2023-2024</li>
+            </ul>
+        </div>
+        <div class="exp-entry">
+            <strong>People-oriented Leadership on Arts, Recreation, Individuality, and Social Sciences (POLARISS)</strong>
+            <ul>
+                <li>Academic Committee</li>
+                <li>Duties: Assisted in coordinating arts, recreation, and social science programs</li>
+                <li>2023-2024</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="section research">
+        <h2>Recent Research / Projects</h2>
+        <div class="research-entry">
+            <div class="research-title">umi</div>
+            <span>February 2026 | Wellness App | Mood tracker | Journal | Virtual Pet</span><br>
+        </div>
+        <div class="research-entry">
+            <div class="research-title">Court Registration and Management System for Marigold Subdivision</div>
+            <span>February 2026 | Web App | Basketball Court Reservations | Activity Management</span>
+        </div>
+    </section>
+
+    <section class="section certificates">
+        <h2>Certificates</h2>
+        <ul class="certificates-entry">
+            <li>TESDA: Wi-Fi 101 and Digital Thumbprint Program | April 2024</li>
+            <li>TESDA: Developing Designs for a Logo | June 2024</li>
+            <li>TESDA: Introduction to Visual Graphic Design | June 2024</li>
+        </ul>
+    </section>
+</div>
+</body>
+</html>
